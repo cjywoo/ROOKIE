@@ -4,5 +4,5 @@
 * [目录](chapter1.md)
 * [frontend](frontend.md)
   * [JS](frontend/js.md)
-    * [function](frontend/js/function.md)
+    * [函数调用](frontend/js/function.md)
 
