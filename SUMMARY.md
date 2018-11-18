@@ -7,7 +7,6 @@
     * [函数调用](frontend/js/function.md)
 * JAVA
 * [设计模式](designpattern.md)
-  * object
+  * [object](designpattern/object.md)
   * [Singleton](designpattern/singleton.md)
-
 
