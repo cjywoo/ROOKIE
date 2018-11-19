@@ -78,7 +78,7 @@ window.$ = function(selector){
 
 ```
 class Vnode(tag,attrs,children{
-    ...
+   
 }
 
 React.createElement = function(tag,attrs,children){
