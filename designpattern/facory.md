@@ -10,7 +10,7 @@
 ![](/assets/uml.png)
 
 ### 实现代码
-```
+``` javascript
 class Prodect{
     constructor(name){
         this.name = name
