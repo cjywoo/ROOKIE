@@ -1,8 +1,10 @@
 # 工厂模式
 
 > 一般涉及到new 操作符
+> 创建对象需要大量重复的代码
+> 客户端不依赖产品类实例如何被创建、实现等细节
 
-## js实现方法
+## 1.js实现方法
 
 ### UML类图
 ![](/assets/uml.png)
@@ -91,3 +93,52 @@ React.createElement('div','data',null)
 
 ```
 
+## 2.java实现方法
+
+### 代码
+
+``` java
+//Video.class
+public abstract class Video {
+	public abstract void produce();
+}
+
+//JavaVideo
+public class JavaVideo extends Video{
+
+	@Override
+	public void produce() {
+		System.out.print("JavaVideo");
+		
+	}
+
+}
+
+// VideoFactory
+public abstract class VideoFactory {
+	public abstract Video getVideo();
+}
+
+// JavaVideoFactory
+public class JavaVideoFactory extends VideoFactory{
+
+	@Override
+	public Video getVideo() {
+		return new JavaVideo();
+	}
+
+}
+
+//  Test
+public class Test {
+
+	public static void main(String[] args) {
+		
+		VideoFactory videoFactory = new JavaVideoFactory();
+		Video video = videoFactory.getVideo();
+		video.produce();
+
+	}
+
+}
+```
