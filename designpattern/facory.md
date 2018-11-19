@@ -39,6 +39,7 @@ p.fn()
 
 ### 场景实现
 1. jQuery $("div")
+
 ```
 class jQuery{
     constructor(selector){
