@@ -42,7 +42,7 @@ p.fn()
 ### 场景实现
 1. jQuery $("div")
 
-```
+``` javascript
 class jQuery{
     constructor(selector){
         let slice = Array.prototype.slice
