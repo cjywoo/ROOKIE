@@ -37,4 +37,39 @@ p.init()
 p.fn()
 ```
 
+### 场景实现
+1. jQuery $("div")
+```
+class jQuery{
+    constructor(selector){
+        let slice = Array.prototype.slice
+        let dom = slice.call(document.querySelectorAll(selector)) //将多个dom节点转化为数组
+        let len = dom ?dom.length :0
+        for(let i =0;i<len;i++){
+            this[i] = dom[i]
+        }
+        this.length = len
+        this.selector = selector || ''
+
+    }
+
+    append(node){
+
+    }
+
+    addClass(name){
+
+    }
+
+    html(data){
+
+    }
+
+    //此处省略n个api
+}
+
+window.$ = function(selector){
+    return new jQuery(selector)
+}
+```
 
