@@ -9,4 +9,5 @@
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
   * [Singleton](designpattern/singleton.md)
+  * [Facory](designpattern/facory.md)
 
