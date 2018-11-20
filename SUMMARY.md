@@ -5,6 +5,7 @@
 * [frontend](frontend.md)
   * [JS](frontend/js.md)
     * [函数调用](frontend/js/function.md)
+    * [property](frontend/js/property.md)
   * [Vue源码解析](frontend/vue.md)
     * [1.前期基础准备](frontend/1zhunbei.md)
 * JAVA
