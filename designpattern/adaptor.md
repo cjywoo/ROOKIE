@@ -31,7 +31,8 @@ console.log(target.request())
 ```
 
 ### 应用场景
-1.兼容老接口
+1. 兼容老接口
+
 ```
 //新的接口
 ajax({}).done(function(){})
@@ -47,4 +48,5 @@ var $ ={
     }
 } 
 ```
+
 2. vue的computed属性
