@@ -6,7 +6,7 @@
 
 ### 实现代码
 
-```
+``` javascript
 //单例模式
 
 class SingleObject {
