@@ -43,7 +43,7 @@ $.ajax(option)
 
 var $ ={
     ajax:function(option){
-        return ajax(option).done(option.success);
+        return ajax(option).done(option.success)
     }
 } 
 ```
