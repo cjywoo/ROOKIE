@@ -13,4 +13,5 @@
   * [面向对象](designpattern/object.md)
   * [Singleton](designpattern/singleton.md)
   * [工厂方法](designpattern/facory.md)
+  * [Single](designpattern/single.md)
 
