@@ -11,7 +11,7 @@
 * JAVA
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
-  * [Singleton](designpattern/singleton.md)
   * [工厂方法](designpattern/facory.md)
   * [单例模式](designpattern/single.md)
+  * [adaptor](designpattern/adaptor.md)
 
