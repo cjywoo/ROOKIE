@@ -6,7 +6,8 @@
 ## 1.JS实现
 ### 实现代码
 
-```
+``` javascript
+
 //适配器模式
 
 class Adaptee {
@@ -33,7 +34,7 @@ console.log(target.request())
 ### 应用场景
 1. 兼容老接口
 
-```
+``` javascript
 //新的接口
 ajax({}).done(function(){})
 
@@ -50,3 +51,24 @@ var $ ={
 ```
 
 2. vue的computed属性
+
+``` html
+
+    <div id="app">
+        <p>顺序：{{message}}</p>
+        <p>逆序：{{reverseMsg}}</p>
+    </div>
+    
+    var vm  = new Vue({
+        el:"#app",
+        data:{
+            message:'hello'
+        },
+        computed:{
+            reverseMsg:function(){
+                return this.message.split('').reverse().join('')
+            }
+        }
+    })
+
+```
