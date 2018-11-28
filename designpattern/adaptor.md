@@ -3,7 +3,8 @@
 > 旧接口格式和使用者不兼容
 > 中间需要加一个适配转换接口
 
-## JS实现
+## 1.JS实现
+### 实现代码
 
 ```
 //适配器模式
@@ -27,4 +28,22 @@ class Target {
 
 let target = new Target();
 console.log(target.request())
+```
+
+### 应用场景
+兼容老接口
+```
+//新的接口
+ajax({}).done(function(){})
+
+//旧的接口
+$.ajax(option)
+
+//适配器
+
+var $ ={
+    ajax:function(option){
+        return ajax(option).done(option.success);
+    }
+} 
 ```
