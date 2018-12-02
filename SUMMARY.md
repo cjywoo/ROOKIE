@@ -8,7 +8,7 @@
     * [property](frontend/js/property.md)
   * [Vue源码解析](frontend/vue.md)
     * [1.前期基础准备](frontend/1zhunbei.md)
-    * [2.vue](frontend/2vue.md)
+    * [2.数据驱动](frontend/2vue.md)
 * JAVA
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
