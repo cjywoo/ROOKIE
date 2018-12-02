@@ -11,9 +11,12 @@ function Vue (options) {
   ) {
     warn('Vue is a constructor and should be called with the `new` keyword')
   }
-  this.c(options)
+  this._init(options)
 }
 ```
+主要的函数在`_init`这个函数上，他定义在`initMixin`这个方法里。
+
+2.`src/core/instance/init.js`
 
 
 ``` javascript
