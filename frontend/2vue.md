@@ -165,3 +165,5 @@ export function proxy (target: Object, sourceKey: string, key: string) {
 ```
 
 非常清晰，是定义了get和set属性，然后通过`Object.defineProperty`这个定义
+
+## Vue 实例挂在的实现
