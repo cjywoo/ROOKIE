@@ -168,3 +168,5 @@ export function proxy (target: Object, sourceKey: string, key: string) {
 
 ## Vue 实例挂在的实现
 
+在线编译版本(compile版本)的，会先生成一个$mount，进行template编译，转化为render函数，然后再调用原来的$mount方法。最终会执行一个updateComponent方法，即一个渲染watcher，即每次更新数据的时候，do刽重新渲染
+
