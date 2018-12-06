@@ -166,7 +166,32 @@ export function proxy (target: Object, sourceKey: string, key: string) {
 
 非常清晰，是定义了get和set属性，然后通过`Object.defineProperty`这个定义
 
-## Vue 实例挂在的实现
+## Vue 实例挂载实例的实现
 
-在线编译版本(compile版本)的，会先生成一个$mount，进行template编译，转化为render函数，然后再调用原来的$mount方法。最终会执行一个updateComponent方法，即一个渲染watcher，即每次更新数据的时候，do刽重新渲染
+在线编译版本(compile版本)的，先缓存原先的$mount方法，然后再生成一个$mount，进行template编译,转化为render函数.
+
+```javascript
+const mount = Vue.prototype.$mount
+Vue.prototype.$mount = function (
+  el?: string | Element,
+  hydrating?: boolean
+): Component {
+
+
+...
+
+const { render, staticRenderFns } = compileToFunctions(template, {
+        shouldDecodeNewlines,
+        shouldDecodeNewlinesForHref,
+        delimiters: options.delimiters,
+        comments: options.comments
+      }, this)
+      
+```
+
+然后再调用原来的$mount方法。
+```javascript
+return mount.call(this, el, hydrating)
+```
+最终会执行一个updateComponent方法，即一个渲染watcher，即每次更新数据的时候，do刽重新渲染
 
