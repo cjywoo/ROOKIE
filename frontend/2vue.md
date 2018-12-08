@@ -193,5 +193,25 @@ const { render, staticRenderFns } = compileToFunctions(template, {
 ```javascript
 return mount.call(this, el, hydrating)
 ```
-最终会执行一个updateComponent方法，即一个渲染watcher，即每次更新数据的时候，do刽重新渲染
+最终会执行一个updateComponent方法，即一个渲染watcher，即每次更新数据的时候，都会重新渲染
 
+## render函数
+首先可以简单尝试下手写render函数
+
+``` javascript
+new Vue({
+  el: '#app',
+  render( createElement ) {
+    return createElement('div', {
+      attrs: {
+        id: 'demo'
+      }
+    }, this.message)
+  },
+  data() {
+    return {
+      message: 'hello vue!woo'
+    }
+  }
+})
+```
