@@ -12,7 +12,8 @@
 * JAVA
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
-  * [工厂方法](designpattern/facory.md)
+  * [工厂模式](designpattern/facory.md)
+  * [abstructFactory](designpattern/abstructfactory.md)
   * [单例模式](designpattern/single.md)
-  * [adaptor](designpattern/adaptor.md)
+  * [适配器模式](designpattern/adaptor.md)
 
