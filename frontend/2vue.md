@@ -303,3 +303,7 @@ Vnod是对真实dom的一种描述，无非是几个关键属性，标签名、�
 ## createElement
 
 最终会调用这个方法创建vnode，定义在`src/core/vdom/create-element.js`
+
+## update
+
+`_update`方法是实例的一个私有方法，首次渲染和更新的时候回呗调用。主要是把vnode渲染成真实的dom
