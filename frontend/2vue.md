@@ -297,3 +297,5 @@ for(key in div){str+=key+' '}
 ```
 
 因此需要用一个js对象去描述一个dom节点，开销要小。定义在`src/core/vdom/vnode.js`,主要借鉴的是开源的snabbdom。
+
+Vnod是对真实dom的一种描述，无非是几个关键属性，标签名、数据、子节点等，用来映射到真实的dom渲染，不需要包括操作dom的方法，因此是非常轻量和简单的。
