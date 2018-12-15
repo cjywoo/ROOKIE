@@ -14,7 +14,8 @@
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
   * [工厂模式](designpattern/facory.md)
-  * [abstructFactory](designpattern/abstructfactory.md)
+  * [抽象工厂](designpattern/abstructfactory.md)
   * [单例模式](designpattern/single.md)
   * [适配器模式](designpattern/adaptor.md)
+  * [derector](designpattern/derector.md)
 
