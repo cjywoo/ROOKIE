@@ -1,6 +1,6 @@
 # 组件化
 
-## createComponent
+## 1.createComponent
 
 在分析createElement的实现的时候，最终会调用_createElement方法，如果不是一个普通的tag标签，则会进入createComponent方法创建一个组件vnode，主要有以下几步。
 
@@ -43,3 +43,8 @@ installComponentHooks(data)
 ```
 
 需要注意，普通元素节点是有childern的，而组件的children是没有的，都在componentOptions这个属性里面。
+
+## 2.patch
+通过createComponent创建组件Vnode,接下来会走到vm._update，执行vm._patch_把vnode转成真正的dom节点。
+
+
