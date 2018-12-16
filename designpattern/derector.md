@@ -42,7 +42,7 @@ dec.draw();
 
 首先安装插件`npm install babel-plugin-transform-decorators-legacy --save-dev`，然后再.babelrc配置文件里面加上"plugins": ["transform-decorators-legacy"]即可。
 
-例子说明1
+* 例子1
 ```
 function testDec(isDec){
     return function(target){
@@ -58,7 +58,7 @@ class Demo {
 alert(Demo.isDec) //false
 ```
 
-例子说明2
+* 例子2
 
 ```
 function mixins(...list){
@@ -82,5 +82,31 @@ let obj = new MyClass();
 obj.foo(); //foo
 ```
 
-#### readonly装饰属性
+#### 装饰器方法
+
+定义一个方法，入参有target,name,descriptor
+
+* 例子1
+```
+function readonly (target,name,descriptor) {
+    descriptor.writable = false;
+    return descriptor
+}
+
+class Person {
+    constructor(){
+        this.first = 'A'
+        this.last = 'B'
+    }
+
+    @readonly
+    name() {
+        return `${this.first} ${this.last}`
+    }
+}
+
+let p = new Person();
+p.name  = 'aa'
+
+```
 
