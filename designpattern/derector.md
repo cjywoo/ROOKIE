@@ -78,6 +78,6 @@ class MyClass {
 }
 
 let obj = new MyClass();
-obj.foo();
+obj.foo(); //foo
 ```
 
