@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [目录](chapter1.md)
-* [frontend](frontend.md)
+* [前端](frontend.md)
   * [JS](frontend/js.md)
     * [函数调用](frontend/js/function.md)
     * [property](frontend/js/property.md)
@@ -10,7 +10,8 @@
     * [1.前期基础准备](frontend/1zhunbei.md)
     * [2.数据驱动](frontend/2vue.md)
     * [3.组件](frontend/3components.md)
-* JAVA
+* [JAVA](java.md)
+  * [easycoding](java/easycoding.md)
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
   * [工厂模式](designpattern/facory.md)
@@ -18,4 +19,5 @@
   * [单例模式](designpattern/single.md)
   * [适配器模式](designpattern/adaptor.md)
   * [装饰器模式](designpattern/derector.md)
+  * [agent](designpattern/agent.md)
 
