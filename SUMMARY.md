@@ -19,5 +19,5 @@
   * [单例模式](designpattern/single.md)
   * [适配器模式](designpattern/adaptor.md)
   * [装饰器模式](designpattern/derector.md)
-  * [agent](designpattern/agent.md)
+  * [代理模式](designpattern/agent.md)
 
