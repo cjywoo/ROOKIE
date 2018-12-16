@@ -38,3 +38,46 @@ dec.draw();
 ```
 
 ### 场景
+#### 1.es6的装饰器类
+
+首先安装插件`npm install babel-plugin-transform-decorators-legacy --save-dev`，然后再.babelrc配置文件里面加上"plugins": ["transform-decorators-legacy"]即可。
+
+例子说明
+```
+function testDec(isDec){
+    return function(target){
+        target.isDec = isDec
+    }
+}
+
+@testDec(false)
+class Demo {
+
+}
+
+alert(Demo.isDec) //false
+```
+#### 2.es6 mixin示例
+
+```
+function mixins(...list){
+    return function(target){
+        Object.assign(target.prototype, ...list)
+    }
+}
+
+const Foo = {
+    foo(){
+        alert('foo')
+    }
+}
+
+@mixins(Foo)
+class MyClass {
+
+}
+
+let obj = new MyClass();
+obj.foo();
+```
+
