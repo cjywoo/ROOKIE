@@ -42,3 +42,73 @@ let proxyImg = new ProxyImg('1.png')
 proxyImg.display()
 ```
 
+### 场景演示
+
+* 1.网页事件代理
+
+```
+即addEventListener('click')
+```
+
+* 2.$.proxy
+
+```
+<body>
+    <div id="test">
+        <a href="#">a1</a>
+        <a href="#">a2</a>
+        <a href="#">a3</a>
+        <a href="#">a4</a>
+        <a href="#">a5</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script>
+      $("#test").click(function(){
+          var fn = function(){
+              $(this).css('background-color','yellow')
+          }
+          fn = $.proxy(fn,this)
+          setTimeout(fn,1000)
+      })
+  </script>
+</body>
+```
+
+* 3.es6 Proxy
+
+```
+let star = {
+    name:'陈骏宇',
+    mobile:'1506******5',
+    age:'28'
+}
+
+let manager = new Proxy(star,{
+    get:function(target,key){
+        if(key == 'mobile'){
+            return '无可奉告'
+        }
+        if(key == 'price'){
+            return 'i00,000,000'
+        }
+        return target[key]
+    },
+    set:function(target,key,val){
+        if(key == 'customprice'){
+            if(val <1000){
+                throw new Error('价格太低')
+            }else{
+                target[key] = val
+                return true
+            }
+        }
+    }
+})
+ 
+console.log(manager.name)  //陈骏宇
+console.log(manager.mobile) //无可奉告
+console.log(manager.price) //100,000,000
+manager.customprice = 50000
+console.log(manager.customprice) //50000
+manager.customprice = 100
+```
