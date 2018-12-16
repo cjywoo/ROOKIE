@@ -17,5 +17,5 @@
   * [抽象工厂](designpattern/abstructfactory.md)
   * [单例模式](designpattern/single.md)
   * [适配器模式](designpattern/adaptor.md)
-  * [derector](designpattern/derector.md)
+  * [装饰器模式](designpattern/derector.md)
 

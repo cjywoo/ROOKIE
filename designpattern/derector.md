@@ -134,3 +134,27 @@ let math = new Math()
 console.log(math.add(2,4))
 ```
 
+### 第三方开源的装饰器lib core-decorators
+
+* 例子1
+
+```
+import {readonly} from 'core-decorators'
+
+class Person {
+    constructor(){
+        this.first = 'A'
+        this.last = 'B'
+    }
+
+    @readonly
+    name() {
+        return `${this.first} ${this.last}`
+    }
+}
+
+let p = new Person();
+p.name  = 'aa'
+
+```
+
