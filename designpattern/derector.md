@@ -110,3 +110,24 @@ p.name  = 'aa'
 
 ```
 
+*例子2
+```
+function log(target,name,descriptor){
+    let oldvalue = descriptor.value
+    descriptor.value = function(){
+        console.log(`calling ${name} with`, arguments)
+        return oldvalue.apply(this,arguments)
+    }
+}
+
+class Math{
+    @log
+    add(a,b){
+        return a+b
+    }
+}
+
+let math = new Math()
+console.log(math.add(2,4))
+```
+
