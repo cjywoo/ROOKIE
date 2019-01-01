@@ -10,6 +10,7 @@
     * [1.前期基础准备](frontend/1zhunbei.md)
     * [2.数据驱动](frontend/2vue.md)
     * [3.组件](frontend/3components.md)
+  * [chrome](frontend/chrome.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
 * [设计模式](designpattern.md)
