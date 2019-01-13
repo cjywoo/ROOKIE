@@ -21,4 +21,5 @@
 * I 接口独立原则
 * D 依赖倒置原则
 
-
+# 参考的文章
+[JavaScript设计模式与开发实践](https://juejin.im/post/5c2e10a76fb9a049c0432697)
