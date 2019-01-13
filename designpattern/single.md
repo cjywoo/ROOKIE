@@ -4,7 +4,7 @@
 
 ## 1.js实现
 
-### 实现代码
+### 实现代码1
 
 ``` javascript
 //单例模式
@@ -31,4 +31,31 @@ let obj2 = SingleObject.getInstance()
 obj2.login()
 
 console.log(obj1 === obj2)
+```
+
+### 实现代码2
+
+``` javascript
+var CreateDiv = function( html ){
+    this.html = html;
+    this.init(); 
+};
+CreateDiv.prototype.init = function(){
+    var div = document.createElement( 'div' ); 
+    div.innerHTML = this.html; 
+    document.body.appendChild( div );
+};
+var ProxySingletonCreateDiv = (function(){
+    var instance;
+    return function( html ){
+        if ( !instance ){
+            instance = new CreateDiv( html );
+        }
+        return instance; 
+    }
+})();
+var a = new ProxySingletonCreateDiv( 'sven1' ); 
+var b = new ProxySingletonCreateDiv( 'sven2' );
+alert( a === b );  //true
+
 ```
