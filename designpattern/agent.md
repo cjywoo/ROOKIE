@@ -12,6 +12,47 @@
 
 ### 1.2 es5实现
 
+```
+
+var Flower = function(){
+    console.log("create a flower");
+}
+
+var xiaoMin = {
+    sendFlower:function(proxy){
+        var flower = new Flower();
+        proxy.receiveFlower(flower);
+    }
+}
+
+var Proxy = function(target){
+    this.target = target;
+}
+Proxy.prototype.receiveFlower = function(flower){
+    var self = this;
+    self.target.listenGoodMood(function(){
+        console.log("target is good mood");
+        self.target.receiveFlower(flower);
+    })
+}
+
+var Target = {
+    receiveFlower:function(flower){
+        console.log("I receieve Flower");
+    },
+    listenGoodMood:function(fn){
+        setTimeout(function(){
+            console.log("now I am good mood");
+            fn();
+        },2000);
+    }
+}
+
+var proxy4xiaomi = new Proxy(Target);
+xiaoMin.sendFlower(proxy4xiaomi);
+
+```
+
 
 ### 1.2 es6代码实现
 
