@@ -3,13 +3,13 @@
 使用者无权访问目标对象  
 中间加代理，通过代理做授权和控制
 
-## js实现
+## 1.js实现
 
-### UML图
+### 1.1 UML图
 
 ![](/assets/agent/import1.png)
 
-### 代码实现
+### 1.2 es6代码实现
 
 ```
 class RealImg {
@@ -42,7 +42,7 @@ let proxyImg = new ProxyImg('1.png')
 proxyImg.display()
 ```
 
-### 场景演示
+### 1.3 场景演示
 
 * 1.网页事件代理
 
