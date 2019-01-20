@@ -1,13 +1,17 @@
 # 代理模式
 
-使用者无权访问目标对象  
-中间加代理，通过代理做授权和控制
+* 保护代理：使用者无权访问目标对象，中间加代理，通过代理做授权和控制
+* 虚拟代理：如果一个事情开销很大，则需要由代理决定什么时候做
+
 
 ## 1.js实现
 
 ### 1.1 UML图
 
 ![](/assets/agent/import1.png)
+
+### 1.2 es5实现
+
 
 ### 1.2 es6代码实现
 
@@ -112,3 +116,5 @@ manager.customprice = 50000
 console.log(manager.customprice) //50000
 manager.customprice = 100
 ```
+
+# 1.4 es5实现
