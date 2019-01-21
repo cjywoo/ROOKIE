@@ -5,9 +5,13 @@
 
 ## 1.JS实现
 
-### UML图
+### 1.1 UML图
 
 ![](/assets/decorator/import1.png)
+
+### 1.2 es5实现
+
+
 
 ### 代码实现
 
