@@ -8,7 +8,7 @@
 
 
 ## 1.JS实现
-### 1.1 es5实现代码
+### 1.1 es5实现
 ``` javascript
 var googleMap = {
     show:function(){
@@ -39,7 +39,7 @@ renderMap(baiduMapAdaptor);
 ```
 
 
-### 1.2 es6实现代码
+### 1.2 es6实现
 
 ``` javascript
 
