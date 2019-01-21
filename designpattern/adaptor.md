@@ -1,10 +1,45 @@
 # 适配器模式
 
-> 旧接口格式和使用者不兼容
-> 中间需要加一个适配转换接口
+* 旧接口格式和使用者不兼容
+* 中间需要加一个适配转换接口
+* 装饰者模式作用是为了给对象增加功能，会形成一条长的作用链条，而适配器模式通常只包装一次
+* 代理模式是为了控制对对象的访问，通常也只包装一次，但与适配器还是有所不同
+
+
 
 ## 1.JS实现
-### 实现代码
+### 1.1 es5实现代码
+``` javascript
+var googleMap = {
+    show:function(){
+        console.log("使用google地图渲染");
+    }
+}
+
+var baiduMap = {
+    display:function(){
+        console.log("使用百度地图渲染")
+    }
+}
+
+var baiduMapAdaptor = {
+    show:function(){
+        baiduMap.display();
+    }
+}
+
+var renderMap = function(map){
+    if(map.show instanceof Function){
+        map.show();
+    }
+}
+
+renderMap(googleMap);
+renderMap(baiduMapAdaptor);
+```
+
+
+### 1.2 es6实现代码
 
 ``` javascript
 
@@ -31,8 +66,8 @@ let target = new Target();
 console.log(target.request())
 ```
 
-### 应用场景
-1. 兼容老接口
+#### 应用场景
+1 兼容老接口
 
 ``` javascript
 //新的接口
@@ -50,7 +85,7 @@ var $ ={
 } 
 ```
 
-2. vue的computed属性
+2 vue的computed属性
 
 ``` html
 
