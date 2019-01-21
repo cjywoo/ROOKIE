@@ -13,7 +13,7 @@
 
 
 
-### 代码实现
+### 1.3 es6实现
 
 ```
 class Circle{
@@ -41,8 +41,8 @@ let dec = new Decorator(circle);
 dec.draw();
 ```
 
-### 场景
-#### 1.es6的装饰器类
+#### 场景
+##### 1）es6的装饰器类
 
 首先安装插件`npm install babel-plugin-transform-decorators-legacy --save-dev`，然后再.babelrc配置文件里面加上"plugins": ["transform-decorators-legacy"]即可。
 
@@ -87,7 +87,7 @@ let obj = new MyClass();
 obj.foo(); //foo
 ```
 
-#### 装饰器方法
+##### 2）装饰器方法
 
 定义一个方法，入参有target,name,descriptor
 
@@ -138,7 +138,7 @@ let math = new Math()
 console.log(math.add(2,4))
 ```
 
-### 第三方开源的装饰器lib core-decorators
+##### 3）第三方开源的装饰器lib core-decorators
 
 * 例子1
 
