@@ -28,5 +28,6 @@
   * [装饰器模式](designpattern/derector.md)
   * [代理模式](designpattern/agent.md)
   * [策略模式](designpattern/strategy.md)
+  * [facede](designpattern/facede.md)
 * [awesome](awesome.md)
 
