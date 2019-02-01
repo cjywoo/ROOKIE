@@ -15,7 +15,7 @@
     * [console中的$](frontend/chrome/1console.md)
     * [copy & saving](frontend/chrome/copysaving.md)
     * [consoleMethod](frontend/chrome/consolemethod.md)
-  * [enviroment](frontend/enviroment.md)
+  * [开发环境](frontend/enviroment.md)
   * [工具](frontend/tool.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
