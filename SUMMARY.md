@@ -17,6 +17,7 @@
     * [consoleMethod](frontend/chrome/consolemethod.md)
   * [开发环境](frontend/enviroment.md)
   * [工具](frontend/tool.md)
+  * nginx
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
 * [设计模式](designpattern.md)
