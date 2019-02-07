@@ -13,9 +13,6 @@
 ![](/assets/屏幕快照 2019-02-07 下午2.00.07.png)
 
 ## 环境准备
-
-
-
 ### 下载Gradle
 
 下载地址：[点击下载gradle](https://link.jianshu.com?t=http%3A%2F%2Fservices.gradle.org%2Fdistributions%2F)
