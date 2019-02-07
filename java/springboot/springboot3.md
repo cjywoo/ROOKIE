@@ -52,6 +52,9 @@ source ~/.bash_profile
  在终端上执行gradle -version，查看是否配置成功。如显示如下表示配置成功.
  
 ### 1.2 产品设计
+
+* 产品表
+
 |序号|英文|中文|类型|长度|备注|
 |---|---|---|---|---|---|
 |1|id|编号|varchar|50||
@@ -66,5 +69,23 @@ source ~/.bash_profile
 |10|create_user|创建者ID|varchar|20||
 |11|update_at|更新时间|datetime|||
 |12|update_user|更新者ID|varchar|20||
+
+* 订单表
+
+|序号|英文|中文|类型|长度|备注|
+|---|---|---|---|---|---|
+|1|order_id|订单编号|varchar|50||
+|2|chan_id|渠道编号|varchar|50|淘客公司编号|
+|3|product_id|产品编号|varchar|50||
+|4|chan\_user\_id|用户编号|varchar|50|淘客公司用户编号|
+|5|order_type|订单类型|varchar|50|申购:apply,赎回:redeem|
+|6|order_status|订单状态|varchar|50|初始化:INIT,处理中:PROCESS,成功:SUCESS,失败:FAIL|
+|7|outer\_order\_id|外部订单编号|varchar|50|淘客公司订单编号|
+|8|amount|订单金额|decimal|15,3||
+|9|memo|备注|varchar|200||
+|10|create_at|创建者时间|datetime|||
+|11|update_at|更新时间|datetime|||
+
+
 
 
