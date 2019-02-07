@@ -25,16 +25,13 @@
  要运行Gradle,必须把GRADLE\_HOME/bin 目录添加到环境变量PATH的路径才可以,在终端中输入：
 
 ``` bash
-open -e .bash_profile
+vi ~./bash_profile
 ```
 
 打开.bash\_profile文件,在.bash\_profile文件中输入下面内容
 
 ``` bash
-GRADLE_HOME=/Users/Apple/Desktop/soft/gradle/gradle-4.6 
-
-export GRADLE_HOME
-
+export GRADLE_HOME=/Users/Apple/Desktop/soft/gradle/gradle-4.6 
 export PATH=$PATH:$GRADLE_HOME/bin
 
 ```
