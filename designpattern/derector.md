@@ -2,49 +2,14 @@
 
 * 为对象添加新功能
 * 不改变原有的结构和功能
-* 相比于继承而言，能够在不改变对象自身的继承上，在程序运行期间给对象动态地增加职责。
-* 主要可以应用在AOP上面
 
 ## 1.JS实现
 
-### 1.1 UML图
+### UML图
 
 ![](/assets/decorator/import1.png)
 
-### 1.2 es5实现
-
-```
-Function.prototype.before = function(beforeFn){
-    var _self = this;
-    return function(){
-        beforeFn.apply(this,arguments);
-        return _self.apply(this,arguments);
-    }
-}
-
-Function.prototype.after = function(afterFn){
-    var _self = this;
-    return function(){
-        var ret = _self.apply(this,arguments);
-        afterFn.apply(this,arguments);
-        return ret;
-    }
-}
-
-var log = function(msg){
-    console.log(msg);
-}
-
-var showLogin = function(){
-    console.log("打开登录框")
-}
-
-var showLogin =showLogin.before(log).after(log);
-var object1 = {a:"c"};
-showLogin.call(object1,"haha");
-```
-
-### 1.3 es6实现
+### 代码实现
 
 ```
 class Circle{
@@ -72,8 +37,8 @@ let dec = new Decorator(circle);
 dec.draw();
 ```
 
-#### 场景
-##### 1）es6的装饰器类
+### 场景
+#### 1.es6的装饰器类
 
 首先安装插件`npm install babel-plugin-transform-decorators-legacy --save-dev`，然后再.babelrc配置文件里面加上"plugins": ["transform-decorators-legacy"]即可。
 
@@ -118,7 +83,7 @@ let obj = new MyClass();
 obj.foo(); //foo
 ```
 
-##### 2）装饰器方法
+#### 装饰器方法
 
 定义一个方法，入参有target,name,descriptor
 
@@ -169,7 +134,7 @@ let math = new Math()
 console.log(math.add(2,4))
 ```
 
-##### 3）第三方开源的装饰器lib core-decorators
+### 第三方开源的装饰器lib core-decorators
 
 * 例子1
 

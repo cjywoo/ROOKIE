@@ -20,8 +20,6 @@
   * [nginx](frontend/nginx.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
-  * [springboot](java/springboot.md)
-    * [springbootbase](java/springboot/springbootbase.md)
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
   * [工厂模式](designpattern/facory.md)
@@ -31,7 +29,5 @@
   * [装饰器模式](designpattern/derector.md)
   * [代理模式](designpattern/agent.md)
   * [策略模式](designpattern/strategy.md)
-  * [观察者模式](designpattern/guan-cha-zhe-mo-shi.md)
-  * [外观模式](designpattern/facede.md)
 * [awesome](awesome.md)
 
