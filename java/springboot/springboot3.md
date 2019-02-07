@@ -1,0 +1,10 @@
+# 通过一个理财系统的实战，来了解整个spring boot
+
+
+## 整个系统的脉络
+![](/assets/屏幕快照 2019-02-07 下午1.52.29.png)
+
+## 模块设计
+manager saller
+entity api
+util quartz swagger
