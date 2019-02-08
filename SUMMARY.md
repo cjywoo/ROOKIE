@@ -20,7 +20,7 @@
   * [nginx](frontend/nginx.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
-  * [springboot](java/springboot.md)
+  * [spring](java/springboot.md)
     * [sprintboot1](java/springboot/sprintboot1.md)
     * [springboot2](java/springboot/spring-boot2.md)
     * [springdata](java/springboot/springdata.md)
