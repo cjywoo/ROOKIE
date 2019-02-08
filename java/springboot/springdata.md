@@ -8,7 +8,7 @@
 
 
 ## 如何开发
-
+> 详细的代码见 spring-boot/springdata
 引入spring-data-jpa的依赖
 
 ``` xml
