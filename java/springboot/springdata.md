@@ -6,3 +6,7 @@
 
 ![](/assets/java/import1.png)
 
+
+## 如何开发
+
+引入spring-data-jpa的依赖
