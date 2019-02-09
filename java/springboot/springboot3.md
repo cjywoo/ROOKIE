@@ -118,4 +118,5 @@ server:
 执行顺序可以通过@FixMethodOrder来完成
 
 * swagger
+需要配置依赖，在dependencies.gradle里面
 
