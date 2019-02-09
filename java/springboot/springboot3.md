@@ -117,3 +117,5 @@ server:
 注意要测试覆盖率和边界条件
 执行顺序可以通过@FixMethodOrder来完成
 
+* swagger
+
