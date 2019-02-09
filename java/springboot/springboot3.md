@@ -88,4 +88,23 @@ source ~/.bash_profile
 | 11 | update\_at | 更新时间 | datetime |  |  |
 
 
-
+### 2. 管理功能 manager
+开发的时候，要进行分块，且需要添加相应的依赖
+```
+\\ build.gradle
+dependencies{
+    compile project(":entity")
+    compile libs.mysql
+}
+```
+applicaiton.yml可以设置上下文根
+```
+server:
+  servlet:
+    context-path: /manager
+  port: 8081
+```
+如果错误提示entity没有注入，需要在ManagerApp里面增加注解，注明包扫描的路径
+```
+@EntityScan(basePackages = {"com.imooc.entity"})
+```
