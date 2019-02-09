@@ -109,4 +109,7 @@ server:
 @EntityScan(basePackages = {"com.imooc.entity"})
 ```
 * 异常需要统一处理
+对于浏览器端的，可以通过在resource/public/error 添加5xx.html来实现映射
+
+对于机器端的，需要自己写一个MyErrorController，并且继承BasicErrorController，来实现。
 
