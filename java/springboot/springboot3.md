@@ -108,3 +108,5 @@ server:
 ```
 @EntityScan(basePackages = {"com.imooc.entity"})
 ```
+* 异常需要统一处理
+
