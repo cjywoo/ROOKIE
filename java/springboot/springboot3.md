@@ -113,3 +113,6 @@ server:
 
 对于机器端的，需要自己写一个MyErrorController，并且继承BasicErrorController，来实现。
 
+* 自动化测试
+
+
