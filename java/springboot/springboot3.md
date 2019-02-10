@@ -126,5 +126,5 @@ server:
  6. 在主工程里面添加@EnableMySwagger注解
  
 ### 3.销售端
-
+利用jsonrpc来实现内部系统交互
 
