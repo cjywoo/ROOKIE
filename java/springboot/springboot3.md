@@ -119,4 +119,6 @@ server:
 
 * swagger
 需要配置依赖，在dependencies.gradle里面
+重新新建swagger模块
+重写resoueces/META-INF/resources/swagger-ui.html来实现国际化
 
