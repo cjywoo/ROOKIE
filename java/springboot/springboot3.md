@@ -123,6 +123,8 @@ server:
  3. 重写resoueces/META-INF/resources/swagger-ui.html来实现国际化
  4. 创建EnableMySwagger注解类
  5. 个性化的配置，通过@ConfigurationProperties(prefix = "swagger")，并且在application.yml里面进行书写
- 6. 在主工程里面添加@EnableMySwagger注
+ 6. 在主工程里面添加@EnableMySwagger注解
  
+### 3.销售端
+
 
