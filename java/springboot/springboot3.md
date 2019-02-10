@@ -118,7 +118,11 @@ server:
 执行顺序可以通过@FixMethodOrder来完成
 
 * swagger
-需要配置依赖，在dependencies.gradle里面
-重新新建swagger模块
-重写resoueces/META-INF/resources/swagger-ui.html来实现国际化
+ 1. 需要配置依赖，在dependencies.gradle里面
+ 2. 重新新建swagger模块
+ 3. 重写resoueces/META-INF/resources/swagger-ui.html来实现国际化
+ 4. 创建EnableMySwagger注解类
+ 5. 个性化的配置，通过@ConfigurationProperties(prefix = "swagger")，并且在application.yml里面进行书写
+ 6. 在主工程里面添加@EnableMySwagger注
+ 
 
