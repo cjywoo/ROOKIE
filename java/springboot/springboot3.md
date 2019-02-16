@@ -129,8 +129,10 @@ server:
 利用jsonrpc来实现内部系统交互
 
 #### 3.1 主要通过一个配置类来实现rpc
-注意，如果rpc代理不是在本modal下，需要添加包路径扫描
-rpc路径的定义不能以斜杠开始
+* 注意，如果rpc代理不是在本modal下，需要添加包路径扫描
+* rpc路径的定义不能以斜杠开始
+* rpc不要返回单个对象的那种，最好返回基本类型
+
 ```
 @Configuration
 @ComponentScan(basePackageClasses = {ProductRpc.class})
