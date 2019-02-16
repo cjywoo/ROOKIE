@@ -128,3 +128,26 @@ server:
 ### 3.销售端
 利用jsonrpc来实现内部系统交互
 
+#### 3.1 主要通过一个配置类来实现rpc
+注意，如果rpc代理不是在本modal下，需要添加包路径扫描
+
+```
+@Configuration
+@ComponentScan(basePackageClasses = {ProductRpc.class})
+public class RpcConfiguration {
+
+    private static Logger LOG = LoggerFactory.getLogger(RpcConfiguration.class);
+
+    @Bean
+    public AutoJsonRpcClientProxyCreator rpcClientProxyCreator(@Value("${rpc.manager.url}") String url){
+        AutoJsonRpcClientProxyCreator creator = new AutoJsonRpcClientProxyCreator();
+        try {
+            creator.setBaseUrl(new URL(url));
+        } catch (MalformedURLException e) {
+            LOG.error("创建rpc服务地址错误",e);
+        }
+        creator.setScanPackage(ProductRpc.class.getPackage().getName());
+        return creator;
+    }
+}
+```
