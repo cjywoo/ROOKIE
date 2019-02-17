@@ -178,6 +178,10 @@ public class ProductRpcImpl implements ProductRpc {
 ```
 
 ##### 客户端
+* 1. 配置configuration类
+  new 一个 AutoJsonRpcClientProxyCreator
+  设置基础地址 setBaseUrl
+  设置扫描的包路径 setScanPackage
 
 ```
 @Configuration
