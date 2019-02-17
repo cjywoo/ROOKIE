@@ -203,3 +203,5 @@ public class RpcConfiguration {
     }
 }
 ```
+
+* 2. 具体实现，直接调用rpcRequest即可。
