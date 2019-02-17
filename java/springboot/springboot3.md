@@ -133,6 +133,52 @@ server:
 * rpc路径的定义不能以斜杠开始
 * rpc不要返回单个对象的那种，最好返回基本类型
 
+##### 服务端
+
+* 1.新增一个配置
+```
+@Configuration
+public class RpcConfiguration {
+
+    @Bean
+    public AutoJsonRpcServiceImplExporter rpcServiceImplExporter(){
+        return new AutoJsonRpcServiceImplExporter();
+    }
+}
+```
+
+* 2. 实现类必须添加`@AutoJsonRpcServiceImpl`注解以及交由spring管理的`@Service`注解
+```
+@AutoJsonRpcServiceImpl
+@Service
+public class ProductRpcImpl implements ProductRpc {
+
+    private static Logger LOG = LoggerFactory.getLogger(ProductRpcImpl.class);
+
+    @Autowired
+    private ProductService productService;
+
+    @Override
+    public List<Product> query(ProductRpcReq req) {
+        LOG.info("查询多个产品，请求：{}",req);
+        Pageable pageable = new PageRequest(0,1000, Sort.Direction.DESC,"rewardRate");
+        Page<Product> result = productService.query(req.getIdList(),req.getMinRewardRate(),req.getMaxRewardRate(),req.getStatusList(),pageable);
+        LOG.info("查询多个产品，结果：{}",result);
+        return result.getContent();
+    }
+
+    @Override
+    public Product findOne(String id) {
+        LOG.info("查询多个产品，请求：id:{}",id);
+        Product result = productService.findOne(id);
+        LOG.info("查询多个产品，结果：{}",result);
+        return result;
+    }
+}
+```
+
+##### 客户端
+
 ```
 @Configuration
 @ComponentScan(basePackageClasses = {ProductRpc.class})
