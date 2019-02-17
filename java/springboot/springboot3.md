@@ -205,3 +205,7 @@ public class RpcConfiguration {
 ```
 
 * 2. 具体实现，直接调用rpcRequest即可。
+
+### 5. RSA与对账
+
+验签过程：调用方在请求头中传递authId,sign;使用AOP在执行方法前根据authId获取公钥进行验签。验签通过就继续执行。
