@@ -2,7 +2,7 @@
 
 打包命令
 ```
-mvn -Dmaven.test.skip -U clean package
+mvn clean package -Dmaven.test.skip -U
 
 ```
 
