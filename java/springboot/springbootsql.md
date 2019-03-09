@@ -12,3 +12,5 @@
 可以参考 /program/springboot/jdbcdemo
 
 利用了h2的内嵌数据库，结合data.sql和schema.sql可以做数据库的初始化
+
+# springboot 两个数据源配置
