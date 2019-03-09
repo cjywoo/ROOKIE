@@ -26,6 +26,7 @@
     * [springboot jdbc](java/springboot/springbootsql.md)
       * [springboot 数据源](java/springboot/springbootsql/springbootdatasouce.md)
       * [springboot 连接池](java/springboot/springbootsql/springbootlinkpool.md)
+      * [springjdbc](java/springboot/springbootsql/springjdbc.md)
     * [springdata](java/springboot/springdata.md)
     * [项目实战](java/springboot/springboot3.md)
 * [设计模式](designpattern.md)
