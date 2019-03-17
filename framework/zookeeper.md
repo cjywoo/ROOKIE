@@ -56,5 +56,9 @@ create 与 delete命令
 zk的watcher是一次性的，触发之后就销毁了
 父节点和子节点都能触发watcher事件
 
+### watcher事件的类型
+* NodeCreated
+* NodeDataChanged
+* NodeDeleted
 
 
