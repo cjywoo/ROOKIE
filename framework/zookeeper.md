@@ -40,6 +40,7 @@
 ```
 ./zkCli.sh 打开zk的客户端命令行后台
 get 与set命令
+create 与 delete命令
 
 ```
 
@@ -48,5 +49,12 @@ get 与set命令
 每个会话都可以设置一个超时时间
 心跳结束，session过期
 心跳机制：客户端向服务端的ping包请求
+
+## zk watcher机制
+针对每个节点的操作，都有一个watcher
+当监控的某个对象发生了变化，则触发watcher事件
+zk的watcher是一次性的，触发之后就销毁了
+父节点和子节点都能触发watcher事件
+
 
 
