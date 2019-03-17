@@ -75,4 +75,5 @@ ls path watch
 * NodeChildrenCreated
 
 ### watcher的使用场景
+* 统一资源配置
 
