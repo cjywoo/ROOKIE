@@ -41,5 +41,5 @@
 * [awesome](awesome.md)
 * [framework](framework.md)
   * [zookeeper](framework/zookeeper.md)
-    * [zookeeper1](framework/zookeeper/zookeeper1.md)
+    * [运维注意点](framework/zookeeper/zookeeper1.md)
 
