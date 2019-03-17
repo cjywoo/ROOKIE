@@ -72,5 +72,7 @@ ls path watch
 * NodeCreated
 * NodeDataChanged
 * NodeDeleted
+* NodeChildrenCreated
 
+### watcher的使用场景
 
