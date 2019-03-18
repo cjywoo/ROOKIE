@@ -77,3 +77,33 @@ ls path watch
 ### watcher的使用场景
 * 统一资源配置
 
+
+## zk的acl权限
+
+zk的权限通过[schema:id:permissions]来构成权限列表
+schema:代表某种权限机制
+id:表示允许访问的用户
+permissions：表示权限组合字符串
+
+crdwa权限
+c:create 创建子节点的权限
+r:read 获取当前节点子节点
+w:write 设置节点数据
+d:delete 删除子节点
+a:admin 设置权限
+
+acl的使用场景
+1. 开发人员和测算环境的隔离，开发人员无法操作测试库
+2. 生产环境制定相关的ip可以访问相关节点
+
+## zk的四字命令
+需要使用nc命令
+```
+echo [commond] | nc [ip] [port]
+```
+
+* [stat] 查看zk的状态信息
+* [ruok] 查看zkserver是否启动
+* [dump] 列出未经处理的会话和临时节点
+* [cons] 展示连接到服务端的客户端信息
+* [mntr] 查看zk的健康信息
