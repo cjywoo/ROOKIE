@@ -124,3 +124,17 @@ zk集群是主从节点，心跳机制\(选举模式\)
 
 ![](/assets/framework/zk1/import.png)
 
+### 集群搭建
+
+1. 配置数据文件myid 1/2/3 对应server1/2/3
+```
+myid 在data目录下
+
+//以下配置放在/conf/zk.cfg目录下
+server.1=127.0.0.1:2888:3888
+server.2=127.0.0.1:2889:3889
+server.3=127.0.0.1:2890:3890
+```
+
+2. 通过```./zkCli.sh -server [ip]:[port]```
+
