@@ -139,7 +139,7 @@ server.3=127.0.0.1:2890:3890
 2. 通过```./zkCli.sh -server [ip]:[port]```
 
 
-## zk的客户端与zk链接
+## zk的客户端api操作
 
 ## 基本的示例
 
@@ -186,3 +186,7 @@ public class ZKConnect implements Watcher {
 }
 ```
 
+## zk常用的java客户端
+* zk api原生
+* zk client
+* Apache curator
