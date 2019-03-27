@@ -191,10 +191,10 @@ public class ZKConnect implements Watcher {
 * zk client
 * Apache curator
 
-### zk 原生api的不足之处
+### zookeeper 原生api的不足之处
 * 超时重连不会自动，需要手动实现
 * watcher 注册一次就会失效
 
 
-## zk的分布式锁
+## zookeeper的分布式锁
 目的：保证数据一致性
