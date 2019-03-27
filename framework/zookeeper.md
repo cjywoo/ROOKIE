@@ -203,3 +203,8 @@ public class ZKConnect implements Watcher {
 
 ![](/assets/framework/zk/import22.png)
 
+### 可能出现的状况
+业务1进来 -> 获取锁 -> 业务操作 -> 释放锁
+业务2进来 -> 获取锁失败 -> 添加释放锁监听 -> 等待锁释放
+
+
