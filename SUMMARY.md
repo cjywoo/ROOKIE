@@ -18,6 +18,8 @@
   * [开发环境](frontend/enviroment.md)
   * [工具](frontend/tool.md)
   * [nginx](frontend/nginx.md)
+  * [vueProject](frontend/vueproject.md)
+    * [vueP1](frontend/vueproject/vuep1.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
   * [spring](java/springboot.md)
