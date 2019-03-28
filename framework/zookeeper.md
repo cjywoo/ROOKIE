@@ -135,7 +135,7 @@ server.1=127.0.0.1:2888:3888
 server.2=127.0.0.1:2889:3889  
 server.3=127.0.0.1:2890:3890
 
-    2. 通过```./zkCli.sh -server [ip]:[port]
+1. 通过\`\`\`./zkCli.sh -server \[ip\]:\[port\]
 
 ## zk的客户端api操作
 
@@ -204,7 +204,7 @@ public class ZKConnect implements Watcher {
 ![](/assets/framework/zk/import22.png)
 
 ### 可能出现的状况
-业务1进来 -> 获取锁(创建临时节点) -> 业务操作 -> 释放锁
-业务2进来 -> 获取锁失败 -> 添加释放锁监听 -> 等待锁释放
 
+业务1进来 -&gt; 获取锁\(创建临时节点\) -&gt; 业务操作 -&gt; 释放锁\(删除节点\)  
+业务2进来 -&gt; 获取锁失败 -&gt; 添加释放锁监听 -&gt; 等待锁释放
 
