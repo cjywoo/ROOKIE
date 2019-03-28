@@ -42,5 +42,6 @@
 * [framework](framework.md)
   * [zookeeper](framework/zookeeper.md)
     * [运维注意点](framework/zookeeper/zookeeper1.md)
-  * [distributedFrame](framework/distributedframe.md)
+  * [分布式系统](framework/distributedframe.md)
+    * [ds1](framework/distributedframe/ds1.md)
 
