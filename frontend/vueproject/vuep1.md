@@ -23,3 +23,7 @@ components:{
 * `watch`属性，也只是变化才会触发
 * `computed`有get和set方法
 
+## 4.Vue的样式绑定
+* `:class="{样式:boolean变量}"`
+* `:class=[数组变量]`
+* `:style="{样式对象}"或者 :style="[样式数组对象]"`
