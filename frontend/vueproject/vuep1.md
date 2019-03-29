@@ -32,7 +32,11 @@ components:{
 * `:style="{样式对象}"或者 :style="[样式数组对象]"`
 
 ## 5.Vue的动画
-vue在执行动画时，会在外层包裹一个transition，然后动画的过程如下方所示。
 
+vue在执行动画时，会在外层包裹一个transition，然后动画的过程如下方所示。
+* 显示的时候
 ![](/assets/vue/vue1-1.png)
+
+* 隐藏的时候
+![](/assets/vue/vue-1-2.png)
 
