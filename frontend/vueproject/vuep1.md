@@ -18,3 +18,8 @@ components:{
 
 ```
 
+## 3.Vue的计算属性
+* 计算属性`computed`有缓存，如果值没有发生变化，不会重新计算
+* `watch`属性，也只是变化才会触发
+* `computed`有get和set方法
+
