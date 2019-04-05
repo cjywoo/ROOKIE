@@ -41,7 +41,6 @@ vue在执行动画时，会在外层包裹一个transition，然后动画的过�
 ![](/assets/vue/vue-1-2.png)
 
 ## 6.Vue的组件
-
 ### 6.1 组件使用的注意事项
 * 一些比如tbody,ul,select,ol等标签，因为html5标准中要求必须里面跟上tr,li,option等标签，导致使用子组件时候渲染会有问题，因此可以采用is属性，
 ```
