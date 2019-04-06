@@ -89,3 +89,19 @@ Vue.component('row',{
 * 父组件向子组件传值遵循单项数据流
 * 不要直接在子组件内修改父组件的值，而是通过子组件重新定义一个变量接收，然后改变子组件内的变量值。
 * 子组件向父组件传值，则通过$emit事件来触发
+
+### 6.5 组件的参数校验
+主要有以下几个特性
+```
+props:{
+        content:{
+            type: String,
+            required: true,
+            default: 'default value',
+            validator:function(value){
+                return (value.length > 5)
+            }
+        }
+    },
+```
+
