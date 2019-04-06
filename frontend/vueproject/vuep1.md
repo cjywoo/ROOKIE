@@ -67,7 +67,7 @@ Vue.component('row',{
 
 ### 6.3 ref属性
 
-获取dom属性
+获取dom属性,如果标记在组件上，则会显示组件的引用。
 ```
 <div id="root">
         <div ref="hello" @click="handleClick">
