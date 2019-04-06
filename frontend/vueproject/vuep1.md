@@ -48,3 +48,17 @@ vue在执行动画时，会在外层包裹一个transition，然后动画的过�
     <tr is="row"></tr>
 </tbody>
 ```
+
+### 6.2 data属性
+data属性在跟路径下，是一个对象类型是可以的。但是在其他比如组件下定义时，必须返回一个函数
+```
+new Vue({
+    data:{}
+})
+
+Vue.component('row',{
+    data:function(){
+        
+    }
+})
+```
