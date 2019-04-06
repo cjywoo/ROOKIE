@@ -58,7 +58,30 @@ new Vue({
 
 Vue.component('row',{
     data:function(){
-        
+        return {
+            content:''
+        }
     }
 })
+```
+
+### 6.3 ref属性
+
+获取dom属性
+```
+<div id="root">
+        <div ref="hello" @click="handleClick">
+            hello world
+        </div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#root',
+            methods: {
+                handleClick:function(){
+                    console.log(this.$refs.hello.innerHTML);
+                }
+            },
+        })
+    </script>
 ```
