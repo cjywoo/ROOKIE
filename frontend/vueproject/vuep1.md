@@ -34,24 +34,29 @@ components:{
 ## 5.Vue的动画
 
 vue在执行动画时，会在外层包裹一个transition，然后动画的过程如下方所示。
-* 显示的时候
-![](/assets/vue/vue1-1.png)
 
-* 隐藏的时候
-![](/assets/vue/vue-1-2.png)
+* 显示的时候  
+  ![](/assets/vue/vue1-1.png)
+
+* 隐藏的时候  
+  ![](/assets/vue/vue-1-2.png)
 
 ## 6.Vue的组件
+
 ### 6.1 组件使用的注意事项
+
 * 一些比如tbody,ul,select,ol等标签，因为html5标准中要求必须里面跟上tr,li,option等标签，导致使用子组件时候渲染会有问题，因此可以采用is属性，
-``` html
-<tbody>
+  ```html
+  <tbody>
     <tr is="row"></tr>
-</tbody>
-```
+  </tbody>
+  ```
 
 ### 6.2 data属性
+
 data属性在跟路径下，是一个对象类型是可以的。但是在其他比如组件下定义时，必须返回一个函数
-``` javascript
+
+```javascript
 new Vue({
     data:{}
 })
@@ -68,7 +73,8 @@ Vue.component('row',{
 ### 6.3 ref属性
 
 获取dom属性,如果标记在组件上，则会显示组件的引用。
-``` html
+
+```html
 <div id="root">
         <div ref="hello" @click="handleClick">
             hello world
@@ -85,14 +91,18 @@ Vue.component('row',{
         })
     </script>
 ```
+
 ### 6.4 父组件向子组件传值
+
 * 父组件向子组件传值遵循单项数据流
 * 不要直接在子组件内修改父组件的值，而是通过子组件重新定义一个变量接收，然后改变子组件内的变量值。
 * 子组件向父组件传值，则通过$emit事件来触发
 
 ### 6.5 组件的参数校验
+
 主要有以下几个特性
-``` javascript
+
+```javascript
 props:{
         content:{
             type: String,
@@ -104,14 +114,20 @@ props:{
         }
     },
 ```
+
 ### 6.6 给子组件绑定原生事件
+
 需要在事件后面增加.native属性
-``` html
+
+```html
 <counter @click.native="handleClick"></counter>
 ```
+
 ### 6.7 非父子组件之间的传值
+
 利用一个虚拟的总线bus，来实现观察者模式
-``` javascript
+
+```javascript
 Vue.prototype.bus = new Vue();
         var counter = {
             data:function(){
@@ -140,8 +156,10 @@ Vue.prototype.bus = new Vue();
             }
         })
 ```
+
 ### 6.8 Vue中可以使用插槽 slot来实现子组件的内容占位
-``` html
+
+```html
 <div id="root">
         <child>
             <div class="header" slot="header">header</div>
@@ -165,8 +183,10 @@ Vue.prototype.bus = new Vue();
 ```
 
 ### 6.9 Vue中的作用域插槽
+
 即子组件的插槽内容由父组件传入确定，并且规定一个slot作用域
-``` html
+
+```html
 <div id="root">
         <child>
             <template slot-scope="mynamespace">
@@ -198,4 +218,14 @@ Vue.prototype.bus = new Vue();
 ```
 
 ### 6.10 动态组件
+
 即通过`component标签`来实现，属性为`:is`。
+
+## 7.项目预热
+
+### 7.1 多页应用与单页应用
+
+![](/assets/vue/vue11.png)![](/assets/vue/vue22.png)
+
+
+
