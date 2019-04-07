@@ -140,3 +140,4 @@ Vue.prototype.bus = new Vue();
             }
         })
 ```
+### 6.8 Vue中可以使用插槽 slot来实现子组件的内容占位
