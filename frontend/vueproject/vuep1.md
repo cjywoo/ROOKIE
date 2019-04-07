@@ -43,7 +43,7 @@ vue在执行动画时，会在外层包裹一个transition，然后动画的过�
 ## 6.Vue的组件
 ### 6.1 组件使用的注意事项
 * 一些比如tbody,ul,select,ol等标签，因为html5标准中要求必须里面跟上tr,li,option等标签，导致使用子组件时候渲染会有问题，因此可以采用is属性，
-```
+``` html
 <tbody>
     <tr is="row"></tr>
 </tbody>
@@ -51,7 +51,7 @@ vue在执行动画时，会在外层包裹一个transition，然后动画的过�
 
 ### 6.2 data属性
 data属性在跟路径下，是一个对象类型是可以的。但是在其他比如组件下定义时，必须返回一个函数
-```
+``` javascript
 new Vue({
     data:{}
 })
@@ -68,7 +68,7 @@ Vue.component('row',{
 ### 6.3 ref属性
 
 获取dom属性,如果标记在组件上，则会显示组件的引用。
-```
+``` html
 <div id="root">
         <div ref="hello" @click="handleClick">
             hello world
@@ -92,7 +92,7 @@ Vue.component('row',{
 
 ### 6.5 组件的参数校验
 主要有以下几个特性
-```
+``` javascript
 props:{
         content:{
             type: String,
@@ -106,12 +106,12 @@ props:{
 ```
 ### 6.6 给子组件绑定原生事件
 需要在事件后面增加.native属性
-```
+``` html
 <counter @click.native="handleClick"></counter>
 ```
 ### 6.7 非父子组件之间的传值
 利用一个虚拟的总线bus，来实现观察者模式
-```
+``` javascript
 Vue.prototype.bus = new Vue();
         var counter = {
             data:function(){
@@ -141,3 +141,25 @@ Vue.prototype.bus = new Vue();
         })
 ```
 ### 6.8 Vue中可以使用插槽 slot来实现子组件的内容占位
+``` html
+<div id="root">
+        <child>
+            <div class="header" slot="header">header</div>
+            <div class="footer" slot="footer">footer</div>
+        </child>
+    </div>
+    <script>
+        Vue.component('child',{
+            template:`
+                <div>
+                    <slot name="header"></slot>
+                    <div class="content">content</div>
+                    <slot name="footer"></slot>
+                </div>
+            `
+        })
+        var vm = new Vue({
+            el: '#root'
+        })
+    </script>
+```
