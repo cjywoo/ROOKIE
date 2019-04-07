@@ -105,6 +105,38 @@ props:{
     },
 ```
 ### 6.6 给子组件绑定原生事件
+需要在事件后面增加.native属性
 ```
-<child @click.native=
+<counter @click.native="handleClick"></counter>
+```
+### 6.7 非父子组件之间的传值
+利用一个虚拟的总线bus，来实现观察者模式
+```
+Vue.prototype.bus = new Vue();
+        var counter = {
+            data:function(){
+                return {
+                    selfContent:this.content
+                }
+            },
+            props:['content'],
+            template:'<div @click="handleClick">{{selfContent}}</div>',
+            methods: {
+                handleClick(){
+                    this.bus.$emit('change',this.selfContent);
+                }
+            },
+            mounted:function(){
+                var _this = this;
+                this.bus.$on('change',function(msg){
+                    _this.selfContent = msg;
+                })
+            }
+        }
+        var vm = new Vue({
+            el: '#root',
+            components:{
+                counter:counter
+            }
+        })
 ```
