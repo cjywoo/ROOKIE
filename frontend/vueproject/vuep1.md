@@ -196,3 +196,6 @@ Vue.prototype.bus = new Vue();
         })
     </script>
 ```
+
+### 6.10 动态组件
+即通过`component标签`来实现，属性为`:is`。
