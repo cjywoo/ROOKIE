@@ -163,3 +163,36 @@ Vue.prototype.bus = new Vue();
         })
     </script>
 ```
+
+### 6.9 Vue中的作用域插槽
+即子组件的插槽内容由父组件传入确定，并且规定一个slot作用域
+``` html
+<div id="root">
+        <child>
+            <template slot-scope="mynamespace">
+                <li>
+                    <h1>{{mynamespace.item}}</h1>
+                </li>
+            </template>
+        </child>
+    </div>
+    <script>
+        Vue.component('child',{
+            data:function(){
+                return {
+                    list:[1,2,3,4,5]
+                }
+            },
+            template:`
+                <div>
+                    <ul>
+                        <slot v-for="item in list" :item=item></slot>
+                    </ul>
+                </div>
+            `
+        })
+        var vm = new Vue({
+            el: '#root'
+        })
+    </script>
+```
