@@ -20,6 +20,7 @@
   * [开发环境](frontend/enviroment.md)
   * [工具](frontend/tool.md)
   * [nginx](frontend/nginx.md)
+  * [layout](frontend/layout.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
   * [spring](java/springboot.md)
