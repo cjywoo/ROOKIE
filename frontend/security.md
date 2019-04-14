@@ -46,11 +46,31 @@
   ```
 * 富文本
 
-### 1.4 XSS浏览器自带的防御
+### 1.4 如何防御
+#### XSS浏览器自带的防御
 浏览器自带的XSS防御只能防止反射到Html中的属性和内容。
 koa2里面通过设置
 ```
 ctx.set('X-XSS-Protection',0); //0是关闭，1是打开
+```
+#### 防御html和html属性
+```
+// 转义html
+var escapeHTML = function(str){
+	if(!str) return '';
+	str = str.replace(/</g, '&lt;');
+	str = str.replace(/>/g, '&rt;');
+	return str;
+}
+
+// 转义html属性
+var escapeHTMLProperty = function(str){
+	if(!str) return '';
+	str = str.replace(/"/g, '&quto;');
+	str = str.replace(/"/g, '&#39;');
+	str = str.replace(/ /g, '&#32;');
+	return str;
+}
 ```
 
 
