@@ -93,4 +93,6 @@ B网站冒用A网站的cookie，然后向A网站发送请求
 ### 2.2 如何进行防御
 1）禁止第三方网站带Cookie, 利用cookie中的same-site属性为struct
 2) 在A网站加入验证信息
+  * 利用 ccap插件在前端加入验证码机制
+  * 利用token来进行防御
 
