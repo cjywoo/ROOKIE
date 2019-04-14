@@ -28,8 +28,23 @@
 
 ### 1.2 XSS的攻击类型分类
 * 反射型 URL直接注入
+  攻击方法：http://localhost/?from=%3Cscript%3Ealert(%27haha%27)%3C/script%3Egoogle
 * 存储型 存储到DB中读取时注入
+  攻击方法：评论里面注入<script>注入脚本</script>
 
+### 1.3 XSS的攻击注入点
+注入点有以下几点：
+* HTML节点内容
+* HTML属性
+  ```
+  <img src="1" onerror="alert(1)" >
+  ```
+* javascript代码
+  ``` 
+  var data = "#{data}";
+  var data = "hello";alert(1);"";
+  ```
+* 富文本
 
 
 
