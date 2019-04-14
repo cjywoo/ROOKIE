@@ -21,7 +21,6 @@
   * [工具](frontend/tool.md)
   * [nginx](frontend/nginx.md)
   * [layout](frontend/layout.md)
-  * [WEB前后端安全](frontend/security.md)
 * [JAVA](java.md)
   * [easycoding](java/easycoding.md)
   * [spring](java/springboot.md)
@@ -48,4 +47,7 @@
     * [运维注意点](framework/zookeeper/zookeeper1.md)
   * [分布式系统](framework/distributedframe.md)
     * [ds1](framework/distributedframe/ds1.md)
+* [应用安全](frontend/security.md)
+  * [Web前端](frontend/security/frontend.md)
+  * [fileupload](frontend/security/fileupload.md)
 
