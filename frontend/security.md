@@ -68,7 +68,6 @@ var escapeHTMLProperty = function(str){
 	if(!str) return '';
 	str = str.replace(/"/g, '&quto;');
 	str = str.replace(/"/g, '&#39;');
-	str = str.replace(/ /g, '&#32;');
 	return str;
 }
 ```
