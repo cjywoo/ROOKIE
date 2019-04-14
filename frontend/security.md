@@ -73,5 +73,9 @@ var escapeHTMLProperty = function(str){
 ```
 
 #### 防御javascript
+```
+// 在js的变量的地方加上
+JSON.stringify()
+```
 
 
