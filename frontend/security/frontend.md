@@ -78,4 +78,9 @@ var escapeHTMLProperty = function(str){
 JSON.stringify()
 ```
 
+#### 防御富文本标签
+通过白名单过滤，通过js-xss插件来实现
+
+#### CSP
+内容安全策略
 
