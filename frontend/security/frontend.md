@@ -83,4 +83,14 @@ JSON.stringify()
 
 #### CSP
 内容安全策略
+[如何防御](https://blog.csdn.net/maquealone/article/details/79550144)
+
+## 2. CSRF
+跨站请求伪造
+### 2.1 攻击原理
+B网站冒用A网站的cookie，然后向A网站发送请求
+
+### 2.2 如何进行防御
+1）禁止第三方网站带Cookie, 利用cookie中的same-site属性为struct
+2) 在A网站加入验证信息
 
