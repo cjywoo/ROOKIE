@@ -227,5 +227,45 @@ Vue.prototype.bus = new Vue();
 
 ![](/assets/vue/vue11.png)![](/assets/vue/vue22.png)
 
+### 7.2 项目配置路径别名
+在`webpack.base.conf.js`里面设置访问路径的
+```
+module.exports = {
+    ...
+    resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+      'styles': resolve('src/assets/styles'),
+    }
+  },
+    ...
+}
+```
+
+### 7.3 添加本地的开发代理
+
+在`config/index.js`里面设置开发代理
+```
+module.exports = {
+  dev: {
+
+    // Paths
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    proxyTable: {
+      '/api':{
+        target: 'http://localhost:8080',
+        pathRewrite: {
+          '^/api':  '/static/mock'
+        }
+      }
+    },
+```
+
+
+
+
 
 
