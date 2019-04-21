@@ -264,7 +264,8 @@ module.exports = {
     },
 ```
 
-
+### 7.4 添加'<keep-alive>'
+包裹在router-view标签外，数据只加载一次，然后就存到内存里
 
 
 
