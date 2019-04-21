@@ -265,7 +265,8 @@ module.exports = {
 ```
 
 ### 7.4 添加'<keep-alive>'
-包裹在router-view标签外，数据只加载一次，然后就存到内存里
+包裹在router-view标签外，数据只加载一次，然后就存到内存里,
+配合activated属性, 可以实现请求api不同时，加载不同的数据
 
 
 
