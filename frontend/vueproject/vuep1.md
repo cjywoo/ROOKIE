@@ -265,8 +265,14 @@ module.exports = {
 ```
 
 ### 7.4 添加'<keep-alive>'
-包裹在router-view标签外，数据只加载一次，然后就存到内存里,
-配合activated属性, 可以实现请求api不同时，加载不同的数据
+包裹在router-view标签外，数据只加载一次，然后就存到内存里。
+1. 配合activated属性, 可以实现请求api不同时，加载不同的数据
+2. 在keep-alive标签上增加一个exclude属性，组件的name即可
+```
+    <keep-alive exclude="Detail">
+      <router-view/>
+    </keep-alive>
+```
 
 
 ### 7.5 router-link可以表示不同的tag
