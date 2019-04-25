@@ -293,5 +293,21 @@ unmounted () {
 }
 ```
 
+## 8 调试技巧
+### 8.1 前后端联调
+通过修改在`config/index.js`里面设置开发代理即可
+
+
+### 8.2 真机调试
+修改package.json
+```
+ "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
+```
+是的ip能够被访问
+
+
+
+
+
 
 
