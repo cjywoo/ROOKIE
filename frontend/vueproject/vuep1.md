@@ -269,5 +269,23 @@ module.exports = {
 配合activated属性, 可以实现请求api不同时，加载不同的数据
 
 
+### 7.5 router-link可以表示不同的tag
+```
+<router-link tag="div" to="/" class="header-abs" v-show="showAbs">
+    <div class="iconfont back-icon">&#xe624;</div>
+</router-link >
+```
+这样router-link就表示一个div
+
+### 7.6 对全局事件的解绑
+在一个页面里面，如果在生命周期里面对window做了全局事件的绑定，需要在退出页面时做解绑，不然会导致在整个单页里面都会有该绑定方法
+```
+activated (){                   window.addEventListener('scroll',this.handleScroll);
+},
+deactivated () {
+   window.removeEventListener('scroll',this.handleScroll);
+}
+```
+
 
 
