@@ -305,6 +305,9 @@ unmounted () {
 ```
 是的ip能够被访问
 
+### 8.3
+在main.js引入 import 'babel-polyfill'
+
 
 
 
