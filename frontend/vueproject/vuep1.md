@@ -312,6 +312,15 @@ unmounted () {
 
 * 修改config/index.js 里面的build的assetsPublicPath属性，使其能够部署到后台的某个目录下
 * 实现异步组件
+在router.js里面修改下component的引入方式
+```
+{
+      path:'/city',
+      name:'City',
+      component: () => import('@/pages/city/City')
+    },
+```
+
 
 
 
