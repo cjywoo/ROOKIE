@@ -311,6 +311,8 @@ unmounted () {
 ## 9 打包上线技巧
 
 * 修改config/index.js 里面的build的assetsPublicPath属性，使其能够部署到后台的某个目录下
+* 实现异步组件
+
 
 
 
