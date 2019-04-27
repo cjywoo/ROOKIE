@@ -305,8 +305,14 @@ unmounted () {
 ```
 是的ip能够被访问
 
-### 8.3
+### 8.3 减少浏览器的版本产生的问题
 在main.js引入 import 'babel-polyfill'
+
+## 9 打包上线技巧
+
+* 修改config/index.js 里面的build的assetsPublicPath属性，使其能够部署到后台的某个目录下
+
+
 
 
 
