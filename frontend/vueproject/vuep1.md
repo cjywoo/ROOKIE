@@ -318,7 +318,7 @@ unmounted () {
       path:'/city',
       name:'City',
       component: () => import('@/pages/city/City')
-    },
+}
 ```
 
 
