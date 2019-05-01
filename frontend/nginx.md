@@ -7,4 +7,8 @@
 * fastcgi\_params uwsgi\_params scgi\_params cgi配置文件
 * koi-utf koi-win win-utf 编码转换映射转化文件
 * mime.types 设置http协议 content-type与扩展名对应关系
-## 
+
+## nginx的编译参数
+```
+nginx -V
+``` 
