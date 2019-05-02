@@ -23,15 +23,20 @@ ls -l 文件  // 显示文件信息
 ![](/assets/devops/2.png)
 
 * 修改权限的语句方法
-```
-chmod 权限数字 文件名
-```
-* 权限数字
-r-4 w-2 x-1 没有对应0
+  ```
+  chmod 权限数字 文件名
+  ```
+* 权限数字  
+  r-4 w-2 x-1 没有对应0
 
 * 创建用户
-```
-adduser 名字
-passwd 名字
-```
+
+  ```
+  adduser 名字
+  passwd 名字
+  ```
+
+## centOS 防火墙
+
+![](/assets/devops/3.png)
 
