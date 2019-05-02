@@ -6,8 +6,12 @@
 
 ## 基本指令
 
-```
+``` shell
 ls 列出文件内容
 mkdir 创建目录
 touch 创建文件
+echo Thanks > hello.txt 向文件写入
+cat hello.txt 查看文件内容
+cp 原始文件 新的文件
+-r 递归目录的内容
 ```
