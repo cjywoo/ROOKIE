@@ -38,5 +38,5 @@ ls -l 文件  // 显示文件信息
 
 ## centOS 防火墙
 
-![](/assets/devops/3.png)
+![](/assets/devops/3.png)![](/assets/devops/4.png)![](/assets/devops/6.png)
 
