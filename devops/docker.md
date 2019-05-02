@@ -35,3 +35,8 @@ docker run -it -p 9000:8080 -v /Users/zhuojingruan/Desktop/project:/soft --privi
 docker ps -a
 ```
 
+## docker创建集群准备工作
+* 创建网段
+```
+docker network create --subnet=172.18.0.0/24 net1
+```
