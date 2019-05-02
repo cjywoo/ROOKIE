@@ -35,6 +35,11 @@ docker run -it -p 9000:8080 -v /Users/zhuojingruan/Desktop/project:/soft --privi
 docker ps -a
 ```
 
+* 进入当前容器
+```
+docker exec -it 容器名 bash
+```
+
 ## docker创建集群准备工作
 * 创建网段
 ```
