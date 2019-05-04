@@ -20,3 +20,8 @@
 
 ![](/assets/redis/2.png)
 
+### 2.3 集群方案
+
+![](/assets/redis/4.png)
+
+> 不使用负载均衡的原因：spring里面对redis的操作已经实现了负载均衡
