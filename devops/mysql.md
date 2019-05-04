@@ -39,3 +39,5 @@ rm -rf /var/lib/docker/volumes/v5/_data/grastate.dat
 
 ## 数据库还原
 采用冷还原，即采用空白的Mysql还原数据，然后再加入到集群中
+> 注意:还原之后，一定要重启容器！！！
+
