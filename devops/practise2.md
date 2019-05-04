@@ -1,6 +1,5 @@
 # 实战二 Redis集群
 
-
 1. 安装Redis镜像
 
    ```shell
@@ -58,14 +57,25 @@
    ./redis-server ../redis.conf
    ```
 
-5. 创建Cluster集群
+5. 创建ruby环境和脚本
+![](/assets/redis/61.png)
 
-   ```shell
-   #在r1节点上执行下面的指令
-   cd /usr/redis/src
-   mkdir -p ../cluster
-   cp redis-trib.rb ../cluster/
-   cd ../cluster
-   #创建Cluster集群
+6. 创建Cluster集群
+```shell
+#在r1节点上执行下面的指令
+cd /usr/redis/src
+mkdir -p ../cluster
+cp redis-trib.rb ../cluster/
+cd ../cluster
+#创建Cluster集群
    ./redis-trib.rb create --replicas 1 172.19.0.2:6379 172.19.0.3:6379 172.19.0.4:6379 172.19.0.5:6379 172.19.0.6:6379 172.19.0.7:6379
-   ```
+```
+
+7. 验证集群
+``` shell
+# 连接redis集群，随便登陆一个容器，执行
+/usr/redis/src/redis-cli -c
+```
+
+
+

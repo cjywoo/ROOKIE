@@ -25,3 +25,8 @@
 ![](/assets/redis/4.png)
 
 > 不使用负载均衡的原因：spring里面对redis的操作已经实现了负载均衡
+
+## 3.redis的配置文件
+
+![](/assets/redis/31.png)
+
