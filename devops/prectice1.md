@@ -118,7 +118,6 @@ listen proxy-mysql
 
 ![](https://ask.qcloudimg.com/http-save/yehe-1412306/x0r5ag6b24.png?imageView2/2/w/1620)
 
- image.png
 
 1. 项目中可以使用配置的 4002 来连接数据库，这样请求会被分发到各个子节点。
 
