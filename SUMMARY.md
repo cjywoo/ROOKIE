@@ -58,6 +58,6 @@
   * [Haproxy](devops/haproxy.md)
   * [keepalive](devops/keepalive.md)
   * [redis](devops/redis.md)
-  * [\[实践\]mysql集群](devops/prectice1.md)
-  * [practise2](devops/practise2.md)
+  * [\[实战\]mysql集群](devops/prectice1.md)
+  * [\[实战\]redis集群](devops/practise2.md)
 
