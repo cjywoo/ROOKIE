@@ -37,4 +37,5 @@ rm -rf /var/lib/docker/volumes/v5/_data/grastate.dat
 
 备份方案就是在宿主机创建一个数据卷，然后通过映射到容器内，实现备份。
 
-
+## 数据库还原
+采用冷还原，即采用空白的Mysql还原数据，然后再加入到集群中
