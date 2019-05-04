@@ -1,8 +1,6 @@
 # 实战一 搭建mysql+haproxy集群方案
 
-
-
-### 1. 搭建基于pxc的mysql集群
+## 1. 搭建基于pxc的mysql集群
 
 1. 拉镜像 
    `docker pull percona/percona-xtradb-cluster:5.7`
@@ -121,7 +119,8 @@ listen proxy-mysql
 
 1. 项目中可以使用配置的 4002 来连接数据库，这样请求会被分发到各个子节点。
 
-  
+
+# 3. 增加热备份
 
 
 
