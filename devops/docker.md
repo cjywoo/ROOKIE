@@ -16,6 +16,11 @@
 * 导入导出镜像  
   ![](/assets/devops/docker/6.png)
 
+* 修改镜像的名字
+```
+docker tag imageid name:tag
+```
+
 * 启动命令
 
 ```bash
