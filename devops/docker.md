@@ -40,6 +40,12 @@ docker ps -a
 docker exec -it 容器名 bash
 ```
 
+* 以root用户登陆当前容器
+```
+docker exec -ti -u root 容器id bash
+```
+
+
 ## docker创建集群准备工作
 * 创建网段
 ```
