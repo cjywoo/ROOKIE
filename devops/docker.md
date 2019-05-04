@@ -53,18 +53,16 @@ docker network create --subnet=172.18.0.0/24 net1
 ```
 
 * 查看网段
-
 ```
 docker inspect net1
 ```
-* 删除网段
 
+* 删除网段
 ```
 docker network rm net1
 ```
 
 * 创建docker卷
-
 ```
 docker volume create --name v1
 ```
