@@ -57,5 +57,6 @@
   * [Mysql](devops/mysql.md)
   * [Haproxy](devops/haproxy.md)
   * [keepalive](devops/keepalive.md)
+  * [redis](devops/redis.md)
   * [mysql集群实践](devops/prectice1.md)
 
