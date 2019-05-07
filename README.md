@@ -1,10 +1,12 @@
 # My Rookie Book
 
-希望通过此项目，从一个Rookie做起~
+希望通过此项目，从一个Rookie做起~下放是基础的知识答疑
 
-变量和类型
+## 变量和类型
 
-1.JavaScript规定了几种语言类型
+1. JavaScript规定了几种数据类型
+> * 原始类型有object number string boolean null undefined
+> * object包括 function Array Date等等
 
 2.JavaScript对象的底层数据结构是什么
 
