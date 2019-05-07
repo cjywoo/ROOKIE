@@ -26,7 +26,7 @@ function juggle(){}
 var ninja1,ninja2;
 juggle.apply(ninja1,[1,2,3]);
 juggle.call(ninja2,1,2,3);
-
+```
 
 # 解决函数上下文
 ## 使用箭头函数
