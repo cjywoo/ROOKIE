@@ -1,14 +1,15 @@
 # My Rookie Book
 
-希望通过此项目，从一个Rookie做起~下放是基础的知识答疑
+希望通过此项目，从一个Rookie做下方是基础的知识答疑
 
 ## 变量和类型
 
-1. JavaScript规定了几种数据类型
+1.JavaScript规定了几种数据类型
 > * 原始类型有object number string boolean null undefined
 > * object包括 function Array Date等等
 
 2.JavaScript对象的底层数据结构是什么
+> [从Chrome源码看JS Object的实现](https://zhuanlan.zhihu.com/p/26169639)
 
 3.Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol
 
