@@ -34,6 +34,7 @@
     * [springdata](java/springboot/springdata.md)
     * [项目实战](java/springboot/springboot3.md)
   * [concurrent](java/concurrent.md)
+  * [rbac](java/rbac.md)
 * [设计模式](designpattern.md)
   * [面向对象](designpattern/object.md)
   * [工厂模式](designpattern/facory.md)
