@@ -1,5 +1,9 @@
 # LVS
 
+[参考1](https://blog.csdn.net/weixin_40470303/article/details/80541639)
+[参考2](https://blog.csdn.net/Ki8Qzvka6Gz4n450m/article/details/79119665)
+[参考3](https://www.cnblogs.com/yangliheng/p/5692068.html)
+[参考4](https://blog.csdn.net/Ki8Qzvka6Gz4n450m/article/details/79119665)
 LVS（Linux Virtual Server）即Linux虚拟服务器,终端互联网用户从外部访问公司的外部负载均衡服务器，终端用户的Web请求会发送给LVS调度器，调度器根据自己预设的算法决定将该请求发送给后端的某台Web服务器，比如，轮询算法可以将外部的请求平均分发给后端的所有服务器，终端用户访问LVS调度器虽然会被转发到后端真实的服务器，但如果真实服务器连接的是相同的存储，提供的服务也是相同的服务，最终用户不管是访问哪台真实服务器，得到的服务内容都是一样的，整个集群对用户而言都是透明的。
 
 ![](/assets/lvs/1.png)
