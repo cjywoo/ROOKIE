@@ -56,6 +56,7 @@
   * [Linux](devops/linux.md)
   * [Docker](devops/docker.md)
   * [Mysql](devops/mysql.md)
+  * [LVS](devops/lvs.md)
   * [Haproxy](devops/haproxy.md)
   * [keepalive](devops/keepalive.md)
   * [redis](devops/redis.md)
