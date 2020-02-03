@@ -286,7 +286,8 @@ module.exports = {
 ### 7.6 对全局事件的解绑
 在一个页面里面，如果在生命周期里面对window做了全局事件的绑定，需要在退出页面时做解绑，不然会导致在整个单页里面都会有该绑定方法
 ```
-mounted (){                   window.addEventListener('scroll',this.handleScroll);
+mounted (){                   
+    window.addEventListener('scroll',this.handleScroll);
 },
 unmounted () {
    window.removeEventListener('scroll',this.handleScroll);
