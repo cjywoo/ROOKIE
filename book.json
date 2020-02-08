@@ -1,0 +1,76 @@
+{
+    "title": "ROOKIE",
+    "author": "chen junwoo",
+    "description": "A BOOOK FOR ROOKIE",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "styles": {
+        "website": "./styles/website.css"
+    },
+    "links": {
+        "sidebar": {
+            "我的主页": "https://cjywoo.github.io/"
+        }
+    },
+    "plugins": [
+        "-sharing",
+        "splitter",
+        "expandable-chapters-small",
+        "anchors",
+        "github",
+        "github-buttons",
+        "donate",
+        "sharing-plus",
+        "anchor-navigation-ex",
+        "favicon",
+        "code"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/cjywoo"
+        },
+        "github-buttons": {
+            "buttons": [
+                {
+                    "user": "Blankj",
+                    "repo": "glory",
+                    "type": "star",
+                    "size": "small",
+                    "count": true
+                }
+            ]
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": false,
+            "whatsapp": false,
+            "all": [
+                "google",
+                "facebook",
+                "weibo",
+                "twitter",
+                "qq",
+                "qzone",
+                "linkedin",
+                "pocket"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        }
+    }
+}

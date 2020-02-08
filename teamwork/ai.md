@@ -53,3 +53,5 @@ package.json
 * jeckens
 * circleCi
 * travicCi
+
+travicCi的配置方法可以见[链接](https://www.jianshu.com/p/ec5f57d96d66)
