@@ -1,0 +1,21 @@
+{
+    "name": "ROOKIE",
+    "version": "1.0.0",
+    "description": "希望通过此项目，从一个Rookie做下方是基础的知识答疑",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "gitbook build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cjywoo/ROOKIE.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cjywoo/ROOKIE/issues"
+    },
+    "homepage": "https://github.com/cjywoo/ROOKIE#readme"
+}
